@@ -75,6 +75,10 @@ builder.Services.AddScoped<LugarService>();
 builder.Services.AddScoped<ObjetoService>();
 builder.Services.AddScoped<NotaRepository>();
 builder.Services.AddScoped<NotaService>();
+builder.Services.AddScoped<PersonaRepository>();
+builder.Services.AddScoped<RecuerdoPersonaRepository>();
+builder.Services.AddScoped<PersonaService>();
+
 
 
 
