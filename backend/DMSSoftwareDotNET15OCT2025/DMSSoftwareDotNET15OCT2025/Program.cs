@@ -69,6 +69,10 @@ builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<ITokenService, TokenService>();
 builder.Services.AddScoped<RecuerdoService>();
 builder.Services.AddScoped<IRecuerdoRepository, RecuerdoRepository>();
+builder.Services.AddScoped<LugarRepository>();
+builder.Services.AddScoped<RecuerdoLugarRepository>();
+builder.Services.AddScoped<LugarService>();
+
 
 // ---------------------
 // JWT Authentication
