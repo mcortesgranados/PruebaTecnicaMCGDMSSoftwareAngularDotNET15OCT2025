@@ -8,5 +8,6 @@ namespace DMSSoftwareDotNET15OCT2025.Recuerdos.Application.Domain.Ports
         Task<Recuerdo?> GetByIdAsync(int id);
         Task<List<Recuerdo>> GetByUserIdAsync(int userId);
         Task UpdateAsync(Recuerdo recuerdo);
+        public Task<List<Recuerdo>> BuscarRecuerdosAsync(string palabraClave);
     }
 }
