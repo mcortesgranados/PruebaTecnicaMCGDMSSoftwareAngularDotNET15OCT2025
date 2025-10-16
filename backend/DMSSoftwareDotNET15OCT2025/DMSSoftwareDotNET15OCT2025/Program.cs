@@ -1,16 +1,17 @@
+using DMSSoftwareDotNET15OCT2025.Recuerdos.Application.Domain.Ports;
+using DMSSoftwareDotNET15OCT2025.Recuerdos.Application.Interfaces;
 using DMSSoftwareDotNET15OCT2025.Recuerdos.Application.Interfaces;
 using DMSSoftwareDotNET15OCT2025.Recuerdos.Application.Services;
+using DMSSoftwareDotNET15OCT2025.Recuerdos.Application.Services;
+using DMSSoftwareDotNET15OCT2025.Recuerdos.Infrastructure.Persistence;
 using DMSSoftwareDotNET15OCT2025.Recuerdos.Infrastructure.Persistence;
 using DMSSoftwareDotNET15OCT2025.Recuerdos.Infrastructure.Repositories;
+using DMSSoftwareDotNET15OCT2025.Recuerdos.Infrastructure.Repositories;
+using DMSSoftwareDotNET15OCT2025.Recuerdos.Infrastructure.Security;
 using DMSSoftwareDotNET15OCT2025.Recuerdos.Infrastructure.Security;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
-using DMSSoftwareDotNET15OCT2025.Recuerdos.Application.Interfaces;
-using DMSSoftwareDotNET15OCT2025.Recuerdos.Application.Services;
-using DMSSoftwareDotNET15OCT2025.Recuerdos.Infrastructure.Persistence;
-using DMSSoftwareDotNET15OCT2025.Recuerdos.Infrastructure.Repositories;
-using DMSSoftwareDotNET15OCT2025.Recuerdos.Infrastructure.Security;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -35,11 +36,23 @@ builder.Services.AddSwaggerGen(c =>
         Description = "Ingrese JWT con Bearer"
     };
     c.AddSecurityDefinition("Bearer", securityScheme);
-    var securityRequirement = new Microsoft.OpenApi.Models.OpenApiSecurityRequirement
+    c.AddSecurityRequirement(new Microsoft.OpenApi.Models.OpenApiSecurityRequirement
     {
-        { securityScheme, new string[] { } }
-    };
-    c.AddSecurityRequirement(securityRequirement);
+        {
+            new Microsoft.OpenApi.Models.OpenApiSecurityScheme
+            {
+                Reference = new Microsoft.OpenApi.Models.OpenApiReference
+                {
+                    Type = Microsoft.OpenApi.Models.ReferenceType.SecurityScheme,
+                    Id = "Bearer"
+                }
+            },
+            Array.Empty<string>()
+        }
+    });
+
+
+    //c.AddSecurityRequirement(securityRequirement);
 });
 
 // ---------------------
@@ -54,6 +67,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<ITokenService, TokenService>();
+builder.Services.AddScoped<RecuerdoService>();
+builder.Services.AddScoped<IRecuerdoRepository, RecuerdoRepository>();
 
 // ---------------------
 // JWT Authentication
