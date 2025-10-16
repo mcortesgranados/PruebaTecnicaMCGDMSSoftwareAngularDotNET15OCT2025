@@ -1,6 +1,6 @@
 ﻿namespace DMSSoftwareDotNET15OCT2025.Recuerdos.Domain.Entities
 {
-    using DMSSoftwareDotNET15OCT2025.Recuerdos.Application.Domain.Models;
+    using DMSSoftwareDotNET15OCT2025.Recuerdos.Application.Domain.Entities;
     using System;
     public class User
     {
