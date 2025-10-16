@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Proceso de Selección — Prueba Técnica</title>
+  <style>
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fafbfc; color: #23272f; margin: 0; padding: 0; }
+  .container { max-width: 950px; margin: 40px auto; background: #fff; box-shadow: 0 8px 32px rgba(0,0,0,0.08); border-radius: 10px; padding: 32px 40px; }
+  h1 { color: #1565c0; }
+  h2 { color: #2e7d32; margin-top: 32px; }
+  h3 { color: #7b1fa2; margin-top: 24px; }
+  .note { background: #e3f2fd; border-left: 4px solid #1976d2; padding: 16px 20px; margin: 18px 0; border-radius: 7px; }
+  .note ul { list-style: disc inside; margin: 0; padding-left: 1.2em; }
+  .note li { margin-bottom: 3px; line-height: 1.35; }
+  .note p { margin: 0 0 6px 0; line-height: 1.5; }
+  .footer { text-align: right; color: #888; font-size: 1em; margin-top: 40px; }
+  .tag { background: #e3f2fd; color: #1565c0; border-radius: 4px; padding: 3px 8px; margin-left: 6px; font-size: 0.95em; }
+  dt { color: #2e7d32; font-weight: bold; margin-top: 10px; }
+  dd { margin-bottom: 10px; }
+  .params table { border-collapse: collapse; width: 100%; margin: 10px 0; }
+  .params th, .params td { border: 1px solid #ccc; padding: 6px; }
+  .important { background: #fffde7; border-left: 4px solid #fbc02d; padding: 12px 18px; margin: 18px 0; border-radius: 5px; }
+  .sideEffects ul, .solid ul { margin: 0; padding-left: 20px; }
+  @media (max-width: 600px) { .container { padding: 16px 8px; } }
+  /* Code block styling */
+  pre { background: #f6f8fa; padding: 14px; border-radius: 8px; overflow: auto; font-size: 0.92em; }
+  code { font-family: Consolas, 'Courier New', monospace; }
+  .row { display:flex; gap:20px; flex-wrap:wrap; }
+  .col { flex:1 1 420px; }
+  /* Small visual helpers */
+  .endpoint { border: 1px solid #e0e0e0; padding: 12px 14px; border-radius: 8px; background: #fff; box-shadow: 0 3px 8px rgba(0,0,0,0.04); }
+  .json { white-space: pre; font-family: Consolas, 'Courier New', monospace; font-size: 0.95em; }
+  .success { color: #2e7d32; font-weight: 600; }
+  .error { color: #c62828; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>PROCESO DE SELECCIÓN</h1>
+    <h2>PRUEBA TÉCNICA</h2>
+
+    <section class="note">
+      <h3>DATOS BÁSICOS</h3>
+      <div class="params">
+        <table>
+          <tr><th>Fecha</th><td>15/10/2025</td></tr>
+          <tr><th>Aspirante al cargo de</th><td>Desarrollador Web</td></tr>
+          <tr><th>Tiempo para la entrega</th><td>18/10/2025</td></tr>
+        </table>
+      </div>
+
+      <h3>Objetivo</h3>
+      <p>Evaluar de manera objetiva y contextualizada las competencias técnicas de los candidatos, en relación con los requerimientos específicos del cargo, mediante la resolución de ejercicios prácticos que permitan validar su dominio funcional, capacidad de análisis, criterio operativo y adaptación a escenarios reales del entorno organizacional.</p>
+    </section>
+
+    <section>
+      <h3>PRUEBA</h3>
+      <p>Por favor lea detenidamente y complete la prueba en el transcurso de dos días. No es necesario terminar el 100% de la prueba, pero sí es necesario realizar el envío para su evaluación.</p>
+      <p>Una vez terminada, enviar a: <a href="mailto:fredy.fuentes@dms.ms">fredy.fuentes@dms.ms</a></p>
+
+      <div class="important">
+        <p><strong>Contexto:</strong></p>
+        <p>Pepe fue al médico en donde le diagnosticaron Alzheimer. Preocupado porque pronto iba a perder su memoria, acude a sus amigos; ellos le recomiendan crear una aplicación web para almacenar sus recuerdos. Pepe toma la recomendación y lo contrata a usted.</p>
+      </div>
+
+      <h3>Requerimientos funcionales</h3>
+      <ul>
+        <li><strong>(REQ-01)</strong> Identificarse e ingresar a Pepe y sus amigos.</li>
+        <li><strong>(REQ-02)</strong> Crear un recuerdo; este debe contener la hora de creación, la hora en la que sucedió, la situación, el creador, y un estado (Sospecha o Confirmado).</li>
+        <li><strong>(REQ-03)</strong> Crear y asociar un Lugar al recuerdo; se debe guardar la información del creador del lugar y la persona que asoció el lugar al recuerdo.</li>
+        <li><strong>(REQ-04)</strong> Crear y asociar un listado de objetos al recuerdo; se debe guardar la información del creador del objeto y de la persona que asoció el objeto al recuerdo.</li>
+        <li><strong>(REQ-05)</strong> Crear y asociar notas al recuerdo; se debe guardar la información del creador de la nota y la persona que asoció la nota al recuerdo.</li>
+        <li><strong>(REQ-06)</strong> Crear y asociar personas al recuerdo; se debe guardar la información del creador de la persona y la persona que asoció la persona al recuerdo.</li>
+        <li><strong>(REQ-07)</strong> Buscar un recuerdo por palabras clave.</li>
+        <li><strong>(REQ-08)</strong> Listar los recuerdos de un amigo.</li>
+        <li><strong>(REQ-09)</strong> Listar los objetos asociados al recuerdo.</li>
+        <li><strong>(REQ-10)</strong> Listar las personas asociadas a un recuerdo.</li>
+        <li><strong>(REQ-</strong><strong>11)</strong> Marcar el recuerdo como confirmado; se debe guardar la información de la persona que confirma el recuerdo.</li>
+        <li><strong>(REQ-12)</strong> Todos los días la aplicación debe enviar un correo electrónico a las 8:00 AM con los recuerdos generados el día anterior a Pepe.</li>
+      </ul>
+    </section>
+
+    <section class="note">
+      <h3>Instrucciones generales</h3>
+      <ol>
+        <li>Tecnologías requeridas:</li>
+        <li class="sideEffects">
+          <ul>
+            <li>FrontEnd: Angular</li>
+            <li>BackEnd: .NET Core (7+) con API REST</li>
+            <li>Base de datos: SQL Server</li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+    <section>
+      <h3>Detalles sugeridos de entrega</h3>
+      <p>Se sugiere adjuntar en el envío:</p>
+      <ul>
+        <li>Diagrama de la base de datos relacional (modelo entidad-relación).</li>
+        <li>Especificación de la API REST (endpoints principales, verbos, parámetros y ejemplos de request/response).</li>
+        <li>Capturas o enlace a la aplicación web funcional (si está desplegada), o instrucciones para ejecutar localmente.</li>
+        <li>Notas sobre decisiones de diseño relevantes (autenticación, manejo de confirmaciones, envío diario de correo, y consideraciones de escalabilidad).</li>
+      </ul>
+
+      <h3>Formato</h3>
+      <p>Entrega en ZIP o enlace a repositorio (GitHub/GitLab/Bitbucket) con README que explique cómo ejecutar el proyecto y pruebas.</p>
+    </section>
+
+    <div class="footer">PRUEBA TÉCNICA — Proceso de Selección • Fecha emitida: 15/10/2025</div>
+  </div>
+</body>
+</html>
