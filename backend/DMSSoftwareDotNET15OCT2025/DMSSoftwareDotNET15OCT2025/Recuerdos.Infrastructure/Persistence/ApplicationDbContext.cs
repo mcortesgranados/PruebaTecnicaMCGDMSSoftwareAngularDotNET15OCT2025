@@ -12,6 +12,10 @@ namespace DMSSoftwareDotNET15OCT2025.Recuerdos.Infrastructure.Persistence
         public DbSet<Recuerdo> Recuerdos { get; set; } = null!; 
         public DbSet<Lugar> Lugares { get; set; } = null!;
         public DbSet<RecuerdoLugar> Recuerdos_Lugares { get; set; } = null!;
+        public DbSet<Objeto> Objetos { get; set; } = null!;
+        public DbSet<RecuerdoObjeto> Recuerdos_Objetos { get; set; } = null!;
+
+
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -66,7 +70,43 @@ namespace DMSSoftwareDotNET15OCT2025.Recuerdos.Infrastructure.Persistence
                  .HasForeignKey(rl => rl.LugarId);
             });
 
+            modelBuilder.Entity<Objeto>(b =>
+            {
+                b.ToTable("Objetos");
+                b.HasKey(o => o.Id);
+                b.Property(o => o.Nombre).HasMaxLength(150).IsRequired();
+                b.Property(o => o.Descripcion);
+                b.Property(o => o.FechaCreacion).HasDefaultValueSql("GETDATE()");
+
+                b.HasOne(o => o.Creador)
+                    .WithMany() // Puedes agregar colección de objetos si lo deseas
+                    .HasForeignKey(o => o.CreadorId)
+                    .OnDelete(DeleteBehavior.Restrict);
+            });
+
+            modelBuilder.Entity<RecuerdoObjeto>(b =>
+            {
+                b.ToTable("Recuerdos_Objetos");
+                b.HasKey(ro => new { ro.RecuerdoId, ro.ObjetoId });
+
+                b.Property(ro => ro.FechaAsociacion).HasDefaultValueSql("GETDATE()");
+
+                b.HasOne(ro => ro.Recuerdo)
+                 .WithMany()
+                 .HasForeignKey(ro => ro.RecuerdoId);
+
+                b.HasOne(ro => ro.Objeto)
+                 .WithMany()
+                 .HasForeignKey(ro => ro.ObjetoId);
+
+                b.HasOne(ro => ro.AsociadoPor)
+                 .WithMany()
+                 .HasForeignKey(ro => ro.AsociadoPorId)
+                 .OnDelete(DeleteBehavior.Restrict);
+            });
+
             base.OnModelCreating(modelBuilder);
         }
     }
+
 }
