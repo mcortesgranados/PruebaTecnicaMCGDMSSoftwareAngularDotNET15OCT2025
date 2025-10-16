@@ -42,5 +42,12 @@ namespace DMSSoftwareDotNET15OCT2025.Recuerdos.Api.Controllers
             var resultados = await _service.BuscarRecuerdosAsync(palabraClave);
             return Ok(resultados);
         }
+
+        [HttpGet("amigo/{amigoId}")]
+        public async Task<IActionResult> GetRecuerdosDeAmigo(int amigoId)
+        {
+            var recuerdos = await _service.ListarRecuerdosDeAmigoAsync(amigoId);
+            return Ok(recuerdos);
+        }
     }
 }
