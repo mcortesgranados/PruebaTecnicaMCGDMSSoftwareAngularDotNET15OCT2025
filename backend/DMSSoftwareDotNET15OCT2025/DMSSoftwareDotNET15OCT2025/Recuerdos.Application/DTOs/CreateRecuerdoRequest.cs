@@ -1,4 +1,4 @@
-﻿using DMSSoftwareDotNET15OCT2025.Recuerdos.Application.Domain.Models;
+﻿using DMSSoftwareDotNET15OCT2025.Recuerdos.Application.Domain.Entities;
 
 namespace DMSSoftwareDotNET15OCT2025.Recuerdos.Application.DTOs
 {
