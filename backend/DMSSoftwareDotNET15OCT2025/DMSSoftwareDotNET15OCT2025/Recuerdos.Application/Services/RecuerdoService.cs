@@ -1,8 +1,8 @@
-﻿using DMSSoftwareDotNET15OCT2025.Recuerdos.Application.Domain.Models;
+﻿
 using DMSSoftwareDotNET15OCT2025.Recuerdos.Application.Domain.Ports;
 using DMSSoftwareDotNET15OCT2025.Recuerdos.Application.DTOs;
-using DMSSoftwareDotNET15OCT2025.Recuerdos.Application.Domain.Models;
-using DMSSoftwareDotNET15OCT2025.Recuerdos.Application.Domain.Ports;
+using DMSSoftwareDotNET15OCT2025.Recuerdos.Application.Domain.Entities;
+
 
 namespace DMSSoftwareDotNET15OCT2025.Recuerdos.Application.Services
 {
