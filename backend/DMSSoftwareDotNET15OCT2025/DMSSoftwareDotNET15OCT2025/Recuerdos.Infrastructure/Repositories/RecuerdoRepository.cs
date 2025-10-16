@@ -1,12 +1,13 @@
-﻿using DMSSoftwareDotNET15OCT2025.Recuerdos.Application.Domain.Ports;
+﻿using DMSSoftwareDotNET15OCT2025.Recuerdos.Application.Domain.Entities;
 using DMSSoftwareDotNET15OCT2025.Recuerdos.Application.Domain.Ports;
+using DMSSoftwareDotNET15OCT2025.Recuerdos.Application.Domain.Ports;
+using DMSSoftwareDotNET15OCT2025.Recuerdos.Application.DTOs;
 using DMSSoftwareDotNET15OCT2025.Recuerdos.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using DMSSoftwareDotNET15OCT2025.Recuerdos.Application.Domain.Entities;
 
 namespace DMSSoftwareDotNET15OCT2025.Recuerdos.Infrastructure.Repositories
 {
@@ -58,6 +59,22 @@ namespace DMSSoftwareDotNET15OCT2025.Recuerdos.Infrastructure.Repositories
             return await _context.Recuerdos
                 .Include(r => r.Creador)
                 .Where(r => EF.Functions.Like(r.Situacion, $"%{palabraClave}%"))
+                .ToListAsync();
+        }
+
+        public async Task<List<RecuerdoAmigoDto>> GetRecuerdosByAmigoIdAsync(int amigoId)
+        {
+            return await _context.Recuerdos
+                .Where(r => r.CreadorId == amigoId)
+                .Select(r => new RecuerdoAmigoDto
+                {
+                    Id = r.Id,
+                    Titulo = r.Titulo,
+                    Situacion = r.Situacion,
+                    FechaOcurrencia = r.FechaOcurrencia,
+                    Estado = r.Estado.HasValue ? r.Estado.Value.ToString() : "Sospecha",
+                    CreadorNombre = r.Creador.Nombre
+                })
                 .ToListAsync();
         }
     }
