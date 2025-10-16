@@ -1,4 +1,5 @@
-﻿using DMSSoftwareDotNET15OCT2025.Recuerdos.Domain.Entities;
+﻿using DMSSoftwareDotNET15OCT2025.Recuerdos.Application.Domain.Models;
+using DMSSoftwareDotNET15OCT2025.Recuerdos.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace DMSSoftwareDotNET15OCT2025.Recuerdos.Infrastructure.Persistence
@@ -8,6 +9,8 @@ namespace DMSSoftwareDotNET15OCT2025.Recuerdos.Infrastructure.Persistence
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> opts) : base(opts) { }
 
         public DbSet<User> Usuarios { get; set; } = null!;
+        public DbSet<Recuerdo> Recuerdos { get; set; } = null!; // <-- AGREGAR ESTO
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -21,6 +24,19 @@ namespace DMSSoftwareDotNET15OCT2025.Recuerdos.Infrastructure.Persistence
                 b.Property(u => u.PasswordHash).HasMaxLength(255).IsRequired();
                 b.Property(u => u.FechaRegistro).HasDefaultValueSql("GETDATE()");
                 b.Property(u => u.EsActivo).HasDefaultValue(true);
+            });
+
+            modelBuilder.Entity<Recuerdo>(b =>
+            {
+                b.ToTable("Recuerdos");
+                b.HasKey(r => r.Id); // <-- Usar Id
+                b.Property(r => r.Situacion).HasMaxLength(500).IsRequired();
+                b.Property(r => r.FechaCreacion).HasDefaultValueSql("GETDATE()");
+                b.Property(r => r.Estado).HasConversion<string>().HasMaxLength(50).IsRequired();
+
+                b.HasOne(r => r.Creador)
+                    .WithMany(u => u.Recuerdos)
+                    .HasForeignKey(r => r.CreadorId);
             });
 
             base.OnModelCreating(modelBuilder);
