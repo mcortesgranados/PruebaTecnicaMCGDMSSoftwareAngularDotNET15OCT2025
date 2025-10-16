@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "E:\\PruebaTecnicaMCGDMSSoftwareAngularDotNET15OCT2025\\backend\\DMSSoftwareDotNET15OCT2025\\DMSSoftwareDotNET15OCT2025\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{748BFB51-C26B-4D8E-80BD-244DE1898DB4}|DMSSoftwareDotNET15OCT2025.csproj|e:\\pruebatecnicamcgdmssoftwareangulardotnet15oct2025\\backend\\dmssoftwaredotnet15oct2025\\dmssoftwaredotnet15oct2025\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{748BFB51-C26B-4D8E-80BD-244DE1898DB4}|DMSSoftwareDotNET15OCT2025.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{748BFB51-C26B-4D8E-80BD-244DE1898DB4}|DMSSoftwareDotNET15OCT2025.csproj|e:\\pruebatecnicamcgdmssoftwareangulardotnet15oct2025\\backend\\dmssoftwaredotnet15oct2025\\dmssoftwaredotnet15oct2025\\recuerdos.api\\controllers\\recuerdoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{748BFB51-C26B-4D8E-80BD-244DE1898DB4}|DMSSoftwareDotNET15OCT2025.csproj|solutionrelative:recuerdos.api\\controllers\\recuerdoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -21,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{748BFB51-C26B-4D8E-80BD-244DE1898DB4}|DMSSoftwareDotNET15OCT2025.csproj|e:\\pruebatecnicamcgdmssoftwareangulardotnet15oct2025\\backend\\dmssoftwaredotnet15oct2025\\dmssoftwaredotnet15oct2025\\recuerdos.application\\domain\\entities\\objeto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{748BFB51-C26B-4D8E-80BD-244DE1898DB4}|DMSSoftwareDotNET15OCT2025.csproj|solutionrelative:recuerdos.application\\domain\\entities\\objeto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{748BFB51-C26B-4D8E-80BD-244DE1898DB4}|DMSSoftwareDotNET15OCT2025.csproj|e:\\pruebatecnicamcgdmssoftwareangulardotnet15oct2025\\backend\\dmssoftwaredotnet15oct2025\\dmssoftwaredotnet15oct2025\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{748BFB51-C26B-4D8E-80BD-244DE1898DB4}|DMSSoftwareDotNET15OCT2025.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{748BFB51-C26B-4D8E-80BD-244DE1898DB4}|DMSSoftwareDotNET15OCT2025.csproj|e:\\pruebatecnicamcgdmssoftwareangulardotnet15oct2025\\backend\\dmssoftwaredotnet15oct2025\\dmssoftwaredotnet15oct2025\\recuerdos.application\\domain\\entities\\recuerdo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -66,11 +66,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "RecuerdosController.cs",
               "DocumentMoniker": "E:\\PruebaTecnicaMCGDMSSoftwareAngularDotNET15OCT2025\\backend\\DMSSoftwareDotNET15OCT2025\\DMSSoftwareDotNET15OCT2025\\Recuerdos.Api\\Controllers\\RecuerdosController.cs",
               "RelativeDocumentMoniker": "Recuerdos.Api\\Controllers\\RecuerdosController.cs",
@@ -78,12 +78,11 @@
               "RelativeToolTip": "Recuerdos.Api\\Controllers\\RecuerdosController.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAADwvxUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T13:04:20.01Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-16T13:04:20.01Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "IRecuerdoRepository.cs",
               "DocumentMoniker": "E:\\PruebaTecnicaMCGDMSSoftwareAngularDotNET15OCT2025\\backend\\DMSSoftwareDotNET15OCT2025\\DMSSoftwareDotNET15OCT2025\\Recuerdos.Application\\Domain\\Ports\\IRecuerdoRepository.cs",
               "RelativeDocumentMoniker": "Recuerdos.Application\\Domain\\Ports\\IRecuerdoRepository.cs",
@@ -91,12 +90,11 @@
               "RelativeToolTip": "Recuerdos.Application\\Domain\\Ports\\IRecuerdoRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwoAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T13:03:26.042Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-16T13:03:26.042Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "RecuerdoRepository.cs",
               "DocumentMoniker": "E:\\PruebaTecnicaMCGDMSSoftwareAngularDotNET15OCT2025\\backend\\DMSSoftwareDotNET15OCT2025\\DMSSoftwareDotNET15OCT2025\\Recuerdos.Infrastructure\\Repositories\\RecuerdoRepository.cs",
               "RelativeDocumentMoniker": "Recuerdos.Infrastructure\\Repositories\\RecuerdoRepository.cs",
@@ -104,12 +102,11 @@
               "RelativeToolTip": "Recuerdos.Infrastructure\\Repositories\\RecuerdoRepository.cs",
               "ViewState": "AgIAACAAAAAAAAAAAAAUwDQAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T12:59:05.324Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-16T12:59:05.324Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "RecuerdoService.cs",
               "DocumentMoniker": "E:\\PruebaTecnicaMCGDMSSoftwareAngularDotNET15OCT2025\\backend\\DMSSoftwareDotNET15OCT2025\\DMSSoftwareDotNET15OCT2025\\Recuerdos.Application\\Services\\RecuerdoService.cs",
               "RelativeDocumentMoniker": "Recuerdos.Application\\Services\\RecuerdoService.cs",
@@ -117,12 +114,11 @@
               "RelativeToolTip": "Recuerdos.Application\\Services\\RecuerdoService.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAiwDYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T09:15:33.914Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-16T09:15:33.914Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Objeto.cs",
               "DocumentMoniker": "E:\\PruebaTecnicaMCGDMSSoftwareAngularDotNET15OCT2025\\backend\\DMSSoftwareDotNET15OCT2025\\DMSSoftwareDotNET15OCT2025\\Recuerdos.Application\\Domain\\Entities\\Objeto.cs",
               "RelativeDocumentMoniker": "Recuerdos.Application\\Domain\\Entities\\Objeto.cs",
@@ -130,8 +126,7 @@
               "RelativeToolTip": "Recuerdos.Application\\Domain\\Entities\\Objeto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T09:14:45.636Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-16T09:14:45.636Z"
             },
             {
               "$type": "Document",
@@ -143,18 +138,17 @@
               "RelativeToolTip": "Recuerdos.Application\\Domain\\Entities\\Recuerdo.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAmwCAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T09:14:13.88Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-16T09:14:13.88Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\PruebaTecnicaMCGDMSSoftwareAngularDotNET15OCT2025\\backend\\DMSSoftwareDotNET15OCT2025\\DMSSoftwareDotNET15OCT2025\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "E:\\PruebaTecnicaMCGDMSSoftwareAngularDotNET15OCT2025\\backend\\DMSSoftwareDotNET15OCT2025\\DMSSoftwareDotNET15OCT2025\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAWwFAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAgwB0AAAByAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-16T09:10:01.663Z",
               "EditorCaption": ""
@@ -169,8 +163,7 @@
               "RelativeToolTip": "Recuerdos.Application\\Domain\\Entities\\RecuerdoPersona.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T09:08:01.331Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-16T09:08:01.331Z"
             },
             {
               "$type": "Document",
@@ -182,8 +175,7 @@
               "RelativeToolTip": "Recuerdos.Application\\Domain\\Entities\\Persona.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAkwCMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T09:07:47.122Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-16T09:07:47.122Z"
             },
             {
               "$type": "Document",
@@ -195,8 +187,7 @@
               "RelativeToolTip": "Recuerdos.Infrastructure\\Persistence\\ApplicationDbContext.cs",
               "ViewState": "AgIAAIQAAAAAAAAAAAAWwJkAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T09:06:58.211Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-16T09:06:58.211Z"
             },
             {
               "$type": "Document",
@@ -208,8 +199,7 @@
               "RelativeToolTip": "Recuerdos.Api\\Controllers\\PersonasController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T09:06:40.464Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-16T09:06:40.464Z"
             },
             {
               "$type": "Document",
@@ -221,8 +211,7 @@
               "RelativeToolTip": "Recuerdos.Application\\Services\\PersonaService.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAmwDEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T09:06:14.486Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-16T09:06:14.486Z"
             },
             {
               "$type": "Document",
@@ -234,8 +223,7 @@
               "RelativeToolTip": "Recuerdos.Infrastructure\\Repositories\\PersonaRepository.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAmwCoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T09:05:48.564Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-16T09:05:48.564Z"
             },
             {
               "$type": "Document",
@@ -247,8 +235,7 @@
               "RelativeToolTip": "Recuerdos.Application\\DTOs\\AsociarPersonaRecuerdoRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T09:05:33.722Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-16T09:05:33.722Z"
             }
           ]
         }
