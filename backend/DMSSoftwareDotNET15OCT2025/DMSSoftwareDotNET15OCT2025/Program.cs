@@ -73,6 +73,9 @@ builder.Services.AddScoped<LugarRepository>();
 builder.Services.AddScoped<RecuerdoLugarRepository>();
 builder.Services.AddScoped<LugarService>();
 builder.Services.AddScoped<ObjetoService>();
+builder.Services.AddScoped<NotaRepository>();
+builder.Services.AddScoped<NotaService>();
+
 
 
 
