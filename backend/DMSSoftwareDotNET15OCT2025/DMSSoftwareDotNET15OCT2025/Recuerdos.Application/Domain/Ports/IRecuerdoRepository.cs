@@ -1,4 +1,5 @@
 ﻿using DMSSoftwareDotNET15OCT2025.Recuerdos.Application.Domain.Entities;
+using DMSSoftwareDotNET15OCT2025.Recuerdos.Application.DTOs;
 
 namespace DMSSoftwareDotNET15OCT2025.Recuerdos.Application.Domain.Ports
 {
@@ -9,5 +10,7 @@ namespace DMSSoftwareDotNET15OCT2025.Recuerdos.Application.Domain.Ports
         Task<List<Recuerdo>> GetByUserIdAsync(int userId);
         Task UpdateAsync(Recuerdo recuerdo);
         public Task<List<Recuerdo>> BuscarRecuerdosAsync(string palabraClave);
+        public Task<List<RecuerdoAmigoDto>> GetRecuerdosByAmigoIdAsync(int amigoId);
+
     }
 }
