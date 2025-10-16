@@ -40,5 +40,17 @@ namespace DMSSoftwareDotNET15OCT2025.Recuerdos.Application.Services
                 Estado = creado.Estado.ToString()
             };
         }
+
+
+        /// <summary>
+        /// Busca recuerdos por palabra clave
+        /// </summary>
+        public async Task<IEnumerable<Recuerdo>> BuscarRecuerdosAsync(string palabraClave)
+        {
+            if (string.IsNullOrWhiteSpace(palabraClave))
+                return new List<Recuerdo>();
+
+            return await _repository.BuscarRecuerdosAsync(palabraClave);
+        }
     }
 }
