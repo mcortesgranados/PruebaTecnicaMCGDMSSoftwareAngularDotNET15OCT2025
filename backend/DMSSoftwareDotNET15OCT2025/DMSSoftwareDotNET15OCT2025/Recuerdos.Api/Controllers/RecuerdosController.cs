@@ -30,5 +30,17 @@ namespace DMSSoftwareDotNET15OCT2025.Recuerdos.Api.Controllers
             // Implementar método GetById en el service si deseas
             return Ok();
         }
+
+
+        /// <summary>
+        /// Busca recuerdos que contengan la palabra clave en la situación
+        /// GET: api/Recuerdos/buscar?palabraClave=...
+        /// </summary>
+        [HttpGet("buscar")]
+        public async Task<IActionResult> BuscarRecuerdos([FromQuery] string palabraClave)
+        {
+            var resultados = await _service.BuscarRecuerdosAsync(palabraClave);
+            return Ok(resultados);
+        }
     }
 }
