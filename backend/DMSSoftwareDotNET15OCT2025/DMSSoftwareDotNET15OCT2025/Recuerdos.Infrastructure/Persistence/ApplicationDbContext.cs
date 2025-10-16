@@ -1,4 +1,4 @@
-﻿using DMSSoftwareDotNET15OCT2025.Recuerdos.Application.Domain.Models;
+﻿using DMSSoftwareDotNET15OCT2025.Recuerdos.Application.Domain.Entities;
 using DMSSoftwareDotNET15OCT2025.Recuerdos.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
@@ -15,6 +15,8 @@ namespace DMSSoftwareDotNET15OCT2025.Recuerdos.Infrastructure.Persistence
         public DbSet<Objeto> Objetos { get; set; } = null!;
         public DbSet<RecuerdoObjeto> Recuerdos_Objetos { get; set; } = null!;
         public DbSet<Nota> Notas { get; set; } = null!;
+        public DbSet<Persona> Personas { get; set; } = null!;
+        public DbSet<RecuerdoPersona> Recuerdos_Personas { get; set; } = null!;
 
 
 
@@ -129,6 +131,35 @@ namespace DMSSoftwareDotNET15OCT2025.Recuerdos.Infrastructure.Persistence
                  .OnDelete(DeleteBehavior.Restrict);
             });
 
+
+            modelBuilder.Entity<Persona>(b =>
+            {
+                b.ToTable("Personas");
+                b.HasKey(p => p.PersonaId);
+                b.Property(p => p.Nombre).HasMaxLength(100).IsRequired();
+                b.Property(p => p.Descripcion);
+                b.Property(p => p.CreadorId).IsRequired();
+            });
+
+            modelBuilder.Entity<RecuerdoPersona>(b =>
+            {
+                b.ToTable("Recuerdos_Personas");
+                b.HasKey(rp => new { rp.RecuerdoId, rp.PersonaId });
+
+                b.HasOne(rp => rp.Recuerdo)
+                    .WithMany(r => r.RecuerdosPersonas)
+                    .HasForeignKey(rp => rp.RecuerdoId);
+
+                b.HasOne(rp => rp.Persona)
+                    .WithMany(p => p.RecuerdosPersonas)
+                    .HasForeignKey(rp => rp.PersonaId);
+
+                b.HasOne(rp => rp.AsociadoPor)
+                    .WithMany()
+                    .HasForeignKey(rp => rp.AsociadoPorId);
+
+                b.Property(rp => rp.FechaAsociacion).HasDefaultValueSql("GETDATE()");
+            });
             base.OnModelCreating(modelBuilder);
         }
     }
