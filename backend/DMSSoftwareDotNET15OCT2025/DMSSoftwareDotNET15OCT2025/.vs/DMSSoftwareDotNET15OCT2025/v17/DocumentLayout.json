@@ -1,12 +1,190 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "E:\\PruebaTecnicaMCGDMSSoftwareAngularDotNET15OCT2025\\backend\\DMSSoftwareDotNET15OCT2025\\DMSSoftwareDotNET15OCT2025\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{748BFB51-C26B-4D8E-80BD-244DE1898DB4}|DMSSoftwareDotNET15OCT2025.csproj|e:\\pruebatecnicamcgdmssoftwareangulardotnet15oct2025\\backend\\dmssoftwaredotnet15oct2025\\dmssoftwaredotnet15oct2025\\recuerdos.application\\services\\recuerdoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{748BFB51-C26B-4D8E-80BD-244DE1898DB4}|DMSSoftwareDotNET15OCT2025.csproj|solutionrelative:recuerdos.application\\services\\recuerdoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{748BFB51-C26B-4D8E-80BD-244DE1898DB4}|DMSSoftwareDotNET15OCT2025.csproj|e:\\pruebatecnicamcgdmssoftwareangulardotnet15oct2025\\backend\\dmssoftwaredotnet15oct2025\\dmssoftwaredotnet15oct2025\\recuerdos.application\\domain\\models\\recuerdo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{748BFB51-C26B-4D8E-80BD-244DE1898DB4}|DMSSoftwareDotNET15OCT2025.csproj|solutionrelative:recuerdos.application\\domain\\models\\recuerdo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{748BFB51-C26B-4D8E-80BD-244DE1898DB4}|DMSSoftwareDotNET15OCT2025.csproj|e:\\pruebatecnicamcgdmssoftwareangulardotnet15oct2025\\backend\\dmssoftwaredotnet15oct2025\\dmssoftwaredotnet15oct2025\\recuerdos.application\\dtos\\createrecuerdorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{748BFB51-C26B-4D8E-80BD-244DE1898DB4}|DMSSoftwareDotNET15OCT2025.csproj|solutionrelative:recuerdos.application\\dtos\\createrecuerdorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{748BFB51-C26B-4D8E-80BD-244DE1898DB4}|DMSSoftwareDotNET15OCT2025.csproj|e:\\pruebatecnicamcgdmssoftwareangulardotnet15oct2025\\backend\\dmssoftwaredotnet15oct2025\\dmssoftwaredotnet15oct2025\\controllers\\recuerdoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{748BFB51-C26B-4D8E-80BD-244DE1898DB4}|DMSSoftwareDotNET15OCT2025.csproj|solutionrelative:controllers\\recuerdoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{748BFB51-C26B-4D8E-80BD-244DE1898DB4}|DMSSoftwareDotNET15OCT2025.csproj|e:\\pruebatecnicamcgdmssoftwareangulardotnet15oct2025\\backend\\dmssoftwaredotnet15oct2025\\dmssoftwaredotnet15oct2025\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{748BFB51-C26B-4D8E-80BD-244DE1898DB4}|DMSSoftwareDotNET15OCT2025.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{748BFB51-C26B-4D8E-80BD-244DE1898DB4}|DMSSoftwareDotNET15OCT2025.csproj|e:\\pruebatecnicamcgdmssoftwareangulardotnet15oct2025\\backend\\dmssoftwaredotnet15oct2025\\dmssoftwaredotnet15oct2025\\recuerdos.infrastructure\\repositories\\recuerdorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{748BFB51-C26B-4D8E-80BD-244DE1898DB4}|DMSSoftwareDotNET15OCT2025.csproj|solutionrelative:recuerdos.infrastructure\\repositories\\recuerdorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{748BFB51-C26B-4D8E-80BD-244DE1898DB4}|DMSSoftwareDotNET15OCT2025.csproj|e:\\pruebatecnicamcgdmssoftwareangulardotnet15oct2025\\backend\\dmssoftwaredotnet15oct2025\\dmssoftwaredotnet15oct2025\\recuerdos.application\\domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{748BFB51-C26B-4D8E-80BD-244DE1898DB4}|DMSSoftwareDotNET15OCT2025.csproj|solutionrelative:recuerdos.application\\domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{748BFB51-C26B-4D8E-80BD-244DE1898DB4}|DMSSoftwareDotNET15OCT2025.csproj|e:\\pruebatecnicamcgdmssoftwareangulardotnet15oct2025\\backend\\dmssoftwaredotnet15oct2025\\dmssoftwaredotnet15oct2025\\recuerdos.infrastructure\\persistence\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{748BFB51-C26B-4D8E-80BD-244DE1898DB4}|DMSSoftwareDotNET15OCT2025.csproj|solutionrelative:recuerdos.infrastructure\\persistence\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{748BFB51-C26B-4D8E-80BD-244DE1898DB4}|DMSSoftwareDotNET15OCT2025.csproj|e:\\pruebatecnicamcgdmssoftwareangulardotnet15oct2025\\backend\\dmssoftwaredotnet15oct2025\\dmssoftwaredotnet15oct2025\\recuerdos.application\\domain\\ports\\irecuerdorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{748BFB51-C26B-4D8E-80BD-244DE1898DB4}|DMSSoftwareDotNET15OCT2025.csproj|solutionrelative:recuerdos.application\\domain\\ports\\irecuerdorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{748BFB51-C26B-4D8E-80BD-244DE1898DB4}|DMSSoftwareDotNET15OCT2025.csproj|e:\\pruebatecnicamcgdmssoftwareangulardotnet15oct2025\\backend\\dmssoftwaredotnet15oct2025\\dmssoftwaredotnet15oct2025\\recuerdos.application\\dtos\\recuerdoresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{748BFB51-C26B-4D8E-80BD-244DE1898DB4}|DMSSoftwareDotNET15OCT2025.csproj|solutionrelative:recuerdos.application\\dtos\\recuerdoresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\PruebaTecnicaMCGDMSSoftwareAngularDotNET15OCT2025\\backend\\DMSSoftwareDotNET15OCT2025\\DMSSoftwareDotNET15OCT2025\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\PruebaTecnicaMCGDMSSoftwareAngularDotNET15OCT2025\\backend\\DMSSoftwareDotNET15OCT2025\\DMSSoftwareDotNET15OCT2025\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAqwEYAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T06:42:54.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\PruebaTecnicaMCGDMSSoftwareAngularDotNET15OCT2025\\backend\\DMSSoftwareDotNET15OCT2025\\DMSSoftwareDotNET15OCT2025\\Recuerdos.Application\\Domain\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "Recuerdos.Application\\Domain\\Entities\\User.cs",
+              "ToolTip": "E:\\PruebaTecnicaMCGDMSSoftwareAngularDotNET15OCT2025\\backend\\DMSSoftwareDotNET15OCT2025\\DMSSoftwareDotNET15OCT2025\\Recuerdos.Application\\Domain\\Entities\\User.cs",
+              "RelativeToolTip": "Recuerdos.Application\\Domain\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwkAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T06:36:40.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "E:\\PruebaTecnicaMCGDMSSoftwareAngularDotNET15OCT2025\\backend\\DMSSoftwareDotNET15OCT2025\\DMSSoftwareDotNET15OCT2025\\Recuerdos.Infrastructure\\Persistence\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Recuerdos.Infrastructure\\Persistence\\ApplicationDbContext.cs",
+              "ToolTip": "E:\\PruebaTecnicaMCGDMSSoftwareAngularDotNET15OCT2025\\backend\\DMSSoftwareDotNET15OCT2025\\DMSSoftwareDotNET15OCT2025\\Recuerdos.Infrastructure\\Persistence\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Recuerdos.Infrastructure\\Persistence\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T06:28:23.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RecuerdosController.cs",
+              "DocumentMoniker": "E:\\PruebaTecnicaMCGDMSSoftwareAngularDotNET15OCT2025\\backend\\DMSSoftwareDotNET15OCT2025\\DMSSoftwareDotNET15OCT2025\\Controllers\\RecuerdosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RecuerdosController.cs",
+              "ToolTip": "E:\\PruebaTecnicaMCGDMSSoftwareAngularDotNET15OCT2025\\backend\\DMSSoftwareDotNET15OCT2025\\DMSSoftwareDotNET15OCT2025\\Controllers\\RecuerdosController.cs",
+              "RelativeToolTip": "Controllers\\RecuerdosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T06:25:58.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RecuerdoService.cs",
+              "DocumentMoniker": "E:\\PruebaTecnicaMCGDMSSoftwareAngularDotNET15OCT2025\\backend\\DMSSoftwareDotNET15OCT2025\\DMSSoftwareDotNET15OCT2025\\Recuerdos.Application\\Services\\RecuerdoService.cs",
+              "RelativeDocumentMoniker": "Recuerdos.Application\\Services\\RecuerdoService.cs",
+              "ToolTip": "E:\\PruebaTecnicaMCGDMSSoftwareAngularDotNET15OCT2025\\backend\\DMSSoftwareDotNET15OCT2025\\DMSSoftwareDotNET15OCT2025\\Recuerdos.Application\\Services\\RecuerdoService.cs",
+              "RelativeToolTip": "Recuerdos.Application\\Services\\RecuerdoService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACYAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T06:25:09.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RecuerdoRepository.cs",
+              "DocumentMoniker": "E:\\PruebaTecnicaMCGDMSSoftwareAngularDotNET15OCT2025\\backend\\DMSSoftwareDotNET15OCT2025\\DMSSoftwareDotNET15OCT2025\\Recuerdos.Infrastructure\\Repositories\\RecuerdoRepository.cs",
+              "RelativeDocumentMoniker": "Recuerdos.Infrastructure\\Repositories\\RecuerdoRepository.cs",
+              "ToolTip": "E:\\PruebaTecnicaMCGDMSSoftwareAngularDotNET15OCT2025\\backend\\DMSSoftwareDotNET15OCT2025\\DMSSoftwareDotNET15OCT2025\\Recuerdos.Infrastructure\\Repositories\\RecuerdoRepository.cs",
+              "RelativeToolTip": "Recuerdos.Infrastructure\\Repositories\\RecuerdoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T06:22:28.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IRecuerdoRepository.cs",
+              "DocumentMoniker": "E:\\PruebaTecnicaMCGDMSSoftwareAngularDotNET15OCT2025\\backend\\DMSSoftwareDotNET15OCT2025\\DMSSoftwareDotNET15OCT2025\\Recuerdos.Application\\Domain\\Ports\\IRecuerdoRepository.cs",
+              "RelativeDocumentMoniker": "Recuerdos.Application\\Domain\\Ports\\IRecuerdoRepository.cs",
+              "ToolTip": "E:\\PruebaTecnicaMCGDMSSoftwareAngularDotNET15OCT2025\\backend\\DMSSoftwareDotNET15OCT2025\\DMSSoftwareDotNET15OCT2025\\Recuerdos.Application\\Domain\\Ports\\IRecuerdoRepository.cs",
+              "RelativeToolTip": "Recuerdos.Application\\Domain\\Ports\\IRecuerdoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T06:21:51.712Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RecuerdoResponse.cs",
+              "DocumentMoniker": "E:\\PruebaTecnicaMCGDMSSoftwareAngularDotNET15OCT2025\\backend\\DMSSoftwareDotNET15OCT2025\\DMSSoftwareDotNET15OCT2025\\Recuerdos.Application\\DTOs\\RecuerdoResponse.cs",
+              "RelativeDocumentMoniker": "Recuerdos.Application\\DTOs\\RecuerdoResponse.cs",
+              "ToolTip": "E:\\PruebaTecnicaMCGDMSSoftwareAngularDotNET15OCT2025\\backend\\DMSSoftwareDotNET15OCT2025\\DMSSoftwareDotNET15OCT2025\\Recuerdos.Application\\DTOs\\RecuerdoResponse.cs",
+              "RelativeToolTip": "Recuerdos.Application\\DTOs\\RecuerdoResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T06:20:50.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreateRecuerdoRequest.cs",
+              "DocumentMoniker": "E:\\PruebaTecnicaMCGDMSSoftwareAngularDotNET15OCT2025\\backend\\DMSSoftwareDotNET15OCT2025\\DMSSoftwareDotNET15OCT2025\\Recuerdos.Application\\DTOs\\CreateRecuerdoRequest.cs",
+              "RelativeDocumentMoniker": "Recuerdos.Application\\DTOs\\CreateRecuerdoRequest.cs",
+              "ToolTip": "E:\\PruebaTecnicaMCGDMSSoftwareAngularDotNET15OCT2025\\backend\\DMSSoftwareDotNET15OCT2025\\DMSSoftwareDotNET15OCT2025\\Recuerdos.Application\\DTOs\\CreateRecuerdoRequest.cs",
+              "RelativeToolTip": "Recuerdos.Application\\DTOs\\CreateRecuerdoRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T06:20:23.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Recuerdo.cs",
+              "DocumentMoniker": "E:\\PruebaTecnicaMCGDMSSoftwareAngularDotNET15OCT2025\\backend\\DMSSoftwareDotNET15OCT2025\\DMSSoftwareDotNET15OCT2025\\Recuerdos.Application\\Domain\\Models\\Recuerdo.cs",
+              "RelativeDocumentMoniker": "Recuerdos.Application\\Domain\\Models\\Recuerdo.cs",
+              "ToolTip": "E:\\PruebaTecnicaMCGDMSSoftwareAngularDotNET15OCT2025\\backend\\DMSSoftwareDotNET15OCT2025\\DMSSoftwareDotNET15OCT2025\\Recuerdos.Application\\Domain\\Models\\Recuerdo.cs",
+              "RelativeToolTip": "Recuerdos.Application\\Domain\\Models\\Recuerdo.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAmwCwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T06:19:14.486Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
