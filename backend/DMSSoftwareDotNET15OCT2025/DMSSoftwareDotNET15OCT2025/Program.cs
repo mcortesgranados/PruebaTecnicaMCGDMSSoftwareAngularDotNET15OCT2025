@@ -72,6 +72,8 @@ builder.Services.AddScoped<IRecuerdoRepository, RecuerdoRepository>();
 builder.Services.AddScoped<LugarRepository>();
 builder.Services.AddScoped<RecuerdoLugarRepository>();
 builder.Services.AddScoped<LugarService>();
+builder.Services.AddScoped<ObjetoService>();
+
 
 
 // ---------------------
