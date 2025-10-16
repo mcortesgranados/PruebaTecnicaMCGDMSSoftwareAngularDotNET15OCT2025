@@ -1,7 +1,8 @@
 ﻿
+using DMSSoftwareDotNET15OCT2025.Recuerdos.Application.Domain.Entities;
 using DMSSoftwareDotNET15OCT2025.Recuerdos.Application.Domain.Ports;
 using DMSSoftwareDotNET15OCT2025.Recuerdos.Application.DTOs;
-using DMSSoftwareDotNET15OCT2025.Recuerdos.Application.Domain.Entities;
+using DMSSoftwareDotNET15OCT2025.Recuerdos.Infrastructure.Repositories;
 
 
 namespace DMSSoftwareDotNET15OCT2025.Recuerdos.Application.Services
@@ -51,6 +52,11 @@ namespace DMSSoftwareDotNET15OCT2025.Recuerdos.Application.Services
                 return new List<Recuerdo>();
 
             return await _repository.BuscarRecuerdosAsync(palabraClave);
+        }
+
+        public async Task<List<RecuerdoAmigoDto>> ListarRecuerdosDeAmigoAsync(int amigoId)
+        {
+            return await _repository.GetRecuerdosByAmigoIdAsync(amigoId);
         }
     }
 }
