@@ -14,6 +14,8 @@ namespace DMSSoftwareDotNET15OCT2025.Recuerdos.Infrastructure.Persistence
         public DbSet<RecuerdoLugar> Recuerdos_Lugares { get; set; } = null!;
         public DbSet<Objeto> Objetos { get; set; } = null!;
         public DbSet<RecuerdoObjeto> Recuerdos_Objetos { get; set; } = null!;
+        public DbSet<Nota> Notas { get; set; } = null!;
+
 
 
 
@@ -102,6 +104,28 @@ namespace DMSSoftwareDotNET15OCT2025.Recuerdos.Infrastructure.Persistence
                 b.HasOne(ro => ro.AsociadoPor)
                  .WithMany()
                  .HasForeignKey(ro => ro.AsociadoPorId)
+                 .OnDelete(DeleteBehavior.Restrict);
+            });
+
+            modelBuilder.Entity<Nota>(b =>
+            {
+                b.ToTable("Notas");
+                b.HasKey(n => n.Id);
+                b.Property(n => n.Texto).IsRequired();
+                b.Property(n => n.FechaCreacion).HasDefaultValueSql("GETDATE()");
+
+                b.HasOne(n => n.Recuerdo)
+                 .WithMany()
+                 .HasForeignKey(n => n.RecuerdoId);
+
+                b.HasOne(n => n.Creador)
+                 .WithMany()
+                 .HasForeignKey(n => n.CreadorId)
+                 .OnDelete(DeleteBehavior.Restrict);
+
+                b.HasOne(n => n.AsociadoPor)
+                 .WithMany()
+                 .HasForeignKey(n => n.AsociadoPorId)
                  .OnDelete(DeleteBehavior.Restrict);
             });
 
