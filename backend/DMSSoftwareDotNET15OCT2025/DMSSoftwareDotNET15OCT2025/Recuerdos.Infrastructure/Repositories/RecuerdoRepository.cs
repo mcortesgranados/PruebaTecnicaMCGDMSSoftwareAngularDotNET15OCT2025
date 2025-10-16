@@ -44,5 +44,21 @@ namespace DMSSoftwareDotNET15OCT2025.Recuerdos.Infrastructure.Repositories
             _context.Recuerdos.Update(recuerdo);
             await _context.SaveChangesAsync();
         }
+
+
+        // -------------------- NUEVO MÉTODO --------------------
+        /// <summary>
+        /// (REQ-07) Busca recuerdos cuyo campo Situacion contenga la palabra clave (case-insensitive)
+        /// </summary>
+        public async Task<List<Recuerdo>> BuscarRecuerdosAsync(string palabraClave)
+        {
+            if (string.IsNullOrWhiteSpace(palabraClave))
+                return new List<Recuerdo>();
+
+            return await _context.Recuerdos
+                .Include(r => r.Creador)
+                .Where(r => EF.Functions.Like(r.Situacion, $"%{palabraClave}%"))
+                .ToListAsync();
+        }
     }
 }
