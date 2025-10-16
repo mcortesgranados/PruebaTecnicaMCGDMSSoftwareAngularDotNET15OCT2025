@@ -1,6 +1,4 @@
-﻿using DMSSoftwareDotNET15OCT2025.Recuerdos.Application.Domain.Models;
-using DMSSoftwareDotNET15OCT2025.Recuerdos.Application.Domain.Ports;
-using DMSSoftwareDotNET15OCT2025.Recuerdos.Application.Domain.Models;
+﻿using DMSSoftwareDotNET15OCT2025.Recuerdos.Application.Domain.Ports;
 using DMSSoftwareDotNET15OCT2025.Recuerdos.Application.Domain.Ports;
 using DMSSoftwareDotNET15OCT2025.Recuerdos.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
@@ -8,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DMSSoftwareDotNET15OCT2025.Recuerdos.Application.Domain.Entities;
 
 namespace DMSSoftwareDotNET15OCT2025.Recuerdos.Infrastructure.Repositories
 {
