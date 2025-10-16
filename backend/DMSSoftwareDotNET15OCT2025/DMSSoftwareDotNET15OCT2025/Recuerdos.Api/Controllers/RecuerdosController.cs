@@ -49,5 +49,15 @@ namespace DMSSoftwareDotNET15OCT2025.Recuerdos.Api.Controllers
             var recuerdos = await _service.ListarRecuerdosDeAmigoAsync(amigoId);
             return Ok(recuerdos);
         }
+
+        [HttpGet("{recuerdoId}/objetos")]
+        public async Task<ActionResult<List<ObjetoRecuerdoDto>>> GetObjetos(int recuerdoId)
+        {
+            var objetos = await _service.ListarObjetosAsync(recuerdoId);
+            if (objetos == null || !objetos.Any())
+                return NotFound(new { Message = "No se encontraron objetos para este recuerdo." });
+
+            return Ok(objetos);
+        }
     }
 }
