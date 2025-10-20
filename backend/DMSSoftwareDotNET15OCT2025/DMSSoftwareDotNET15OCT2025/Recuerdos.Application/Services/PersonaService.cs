@@ -20,27 +20,39 @@ namespace DMSSoftwareDotNET15OCT2025.Recuerdos.Application.Services
             _recuerdoPersonaRepo = recuerdoPersonaRepo;
         }
 
-        /// <summary>
-        /// Crea una persona y la asocia a un recuerdo.
-        /// </summary>
         public async Task<RecuerdoPersona> CrearYAsociarAsync(AsociarPersonaRecuerdoRequest request)
         {
-            // Crear Persona
-            var persona = new Persona
+            // Verificar si la persona ya existe
+            var personaExistente = await _personaRepo.GetByNombreYCreadorAsync(request.NombrePersona, request.CreadorId);
+
+            int personaId;
+
+            if (personaExistente != null)
             {
-                Nombre = request.NombrePersona,
-                Descripcion = request.Descripcion,
-                CreadorId = request.CreadorId
-            };
+                // Ya existe
+                personaId = personaExistente.PersonaId;
+            }
+            else
+            {
+                // No existe, crear nueva persona
+                var persona = new Persona
+                {
+                    Nombre = request.NombrePersona,
+                    Descripcion = request.Descripcion,
+                    CreadorId = request.CreadorId
+                };
 
-            var personaCreada = await _personaRepo.AddAsync(persona);
+                var personaCreada = await _personaRepo.AddAsync(persona);
+                personaId = personaCreada.PersonaId;
+            }
 
-            // Crear asociación Recuerdo-Persona
+            // Crear la asociación Recuerdo-Persona
             var rp = new RecuerdoPersona
             {
                 RecuerdoId = request.RecuerdoId,
-                PersonaId = personaCreada.PersonaId,
-                AsociadoPorId = request.AsociadoPorId
+                PersonaId = personaId,
+                AsociadoPorId = request.AsociadoPorId,
+                FechaAsociacion = DateTime.UtcNow
             };
 
             return await _recuerdoPersonaRepo.AddAsync(rp);
