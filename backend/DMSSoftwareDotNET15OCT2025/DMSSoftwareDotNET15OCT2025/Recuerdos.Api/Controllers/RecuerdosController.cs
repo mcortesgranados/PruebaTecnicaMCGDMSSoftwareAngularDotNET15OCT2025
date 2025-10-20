@@ -59,5 +59,17 @@ namespace DMSSoftwareDotNET15OCT2025.Recuerdos.Api.Controllers
 
             return Ok(objetos);
         }
+
+        // GET: api/recuerdos/{id}/personas
+        [HttpGet("{recuerdoId}/personas")]
+        public async Task<ActionResult<List<PersonaRecuerdoDto>>> ListarPersonas(int recuerdoId)
+        {
+            var personas = await _service.ListarPersonasAsync(recuerdoId);
+
+            if (personas == null || personas.Count == 0)
+                return NotFound($"No se encontraron personas asociadas al recuerdo con Id {recuerdoId}.");
+
+            return Ok(personas);
+        }
     }
 }
