@@ -95,5 +95,22 @@ namespace DMSSoftwareDotNET15OCT2025.Recuerdos.Infrastructure.Repositories
                 .ToListAsync();
         }
 
+        public async Task<List<PersonaRecuerdoDto>> ListarPersonasAsync(int recuerdoId)
+        {
+            return await _context.Recuerdos_Personas
+                .Where(rp => rp.RecuerdoId == recuerdoId)
+                .Include(rp => rp.Persona)
+                .Include(rp => rp.AsociadoPor)
+                .Select(rp => new PersonaRecuerdoDto
+                {
+                    PersonaId = rp.PersonaId,
+                    Nombre = rp.Persona.Nombre,
+                    Descripcion = rp.Persona.Descripcion,
+                    FechaAsociacion = rp.FechaAsociacion,
+                    AsociadoPorNombre = rp.AsociadoPor.Nombre
+                })
+                .ToListAsync();
+        }
+
     }
 }
