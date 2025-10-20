@@ -1,5 +1,7 @@
 <!-- File: src/app/components/login/login.component.html -->
-<div class="login-container">
+<div class="container login-container">
+  <h2>Iniciar sesión</h2>
+
   <div *ngIf="usuarioNombre; else showForm">
     <p>Bienvenido, {{ usuarioNombre }}</p>
     <button (click)="logout()">Cerrar sesión</button>
@@ -7,20 +9,22 @@
 
   <ng-template #showForm>
     <form [formGroup]="loginForm" (ngSubmit)="submit()">
-      <div>
-        <label for="email">Email</label>
-        <input id="email" type="email" formControlName="email" />
-        <div *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched">
-          <small *ngIf="loginForm.get('email')?.errors?.['required']">Email requerido</small>
-          <small *ngIf="loginForm.get('email')?.errors?.['email']">Email no válido</small>
+      <div class="row">
+        <div class="col">
+          <label for="email">Email</label>
+          <input id="email" type="email" formControlName="email" />
+          <div *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched">
+            <small *ngIf="loginForm.get('email')?.errors?.['required']" class="error">Email requerido</small>
+            <small *ngIf="loginForm.get('email')?.errors?.['email']" class="error">Email no válido</small>
+          </div>
         </div>
-      </div>
 
-      <div>
-        <label for="password">Contraseña</label>
-        <input id="password" type="password" formControlName="password" />
-        <div *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched">
-          <small>Contraseña requerida</small>
+        <div class="col">
+          <label for="password">Contraseña</label>
+          <input id="password" type="password" formControlName="password" />
+          <div *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched">
+            <small class="error">Contraseña requerida</small>
+          </div>
         </div>
       </div>
 
@@ -30,3 +34,15 @@
     </form>
   </ng-template>
 </div>
+
+<style>
+  .container { max-width: 480px; margin: 40px auto; background: #fff; box-shadow: 0 8px 32px rgba(0,0,0,0.08); border-radius: 10px; padding: 32px 40px; }
+  h2 { color: #1565c0; margin-top: 0; }
+  .row { display:flex; gap:20px; flex-wrap:wrap; margin-bottom: 16px; }
+  .col { flex:1 1 100%; display:flex; flex-direction:column; }
+  input { padding: 8px 10px; border-radius: 6px; border: 1px solid #ccc; font-size: 1em; }
+  button { padding: 10px 16px; border-radius: 6px; background: #1565c0; color: white; font-weight: 600; border: none; cursor: pointer; margin-top: 12px; }
+  button[disabled] { background: #90caf9; cursor: not-allowed; }
+  .success { color: #2e7d32; font-weight: 600; margin-top: 12px; }
+  .error { color: #c62828; font-weight: 600; margin-top: 4px; }
+</style>

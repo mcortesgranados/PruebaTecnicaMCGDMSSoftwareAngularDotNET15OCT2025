@@ -7,6 +7,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { CrearLugarComponent } from './components/crear-lugar/crear-lugar.component';
+import { AsociarRecuerdoComponent } from './components/asociar-recuerdo/asociar-recuerdo.component';
 import { TokenInterceptor } from './interceptors/token.interceptor';
 
 @NgModule({
@@ -18,7 +19,8 @@ import { TokenInterceptor } from './interceptors/token.interceptor';
     ReactiveFormsModule,
     HttpClientModule,
     LoginComponent,       // standalone component
-    CrearLugarComponent   // standalone component
+    CrearLugarComponent,  // standalone component
+    AsociarRecuerdoComponent
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: TokenInterceptor, multi: true }

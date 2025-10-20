@@ -1,0 +1,43 @@
+<!-- File: src/app/components/asociar-recuerdo/asociar-recuerdo.component.html -->
+<div class="container asociar-recuerdo">
+  <h2>Asociar recuerdo con lugar</h2>
+  <form [formGroup]="asociarForm" (ngSubmit)="submit()">
+    <div class="row">
+      <div class="col">
+        <label for="recuerdoId">ID del Recuerdo</label>
+        <input id="recuerdoId" type="number" formControlName="recuerdoId" />
+        <div *ngIf="asociarForm.get('recuerdoId')?.invalid && asociarForm.get('recuerdoId')?.touched">
+          <small class="error">El ID del recuerdo es requerido</small>
+        </div>
+      </div>
+
+      <div class="col">
+        <label for="lugarId">ID del Lugar</label>
+        <input id="lugarId" type="number" formControlName="lugarId" />
+        <div *ngIf="asociarForm.get('lugarId')?.invalid && asociarForm.get('lugarId')?.touched">
+          <small class="error">El ID del lugar es requerido</small>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="error" class="error">{{ error }}</div>
+    <div *ngIf="respuesta" class="success">
+      Asociación creada: Recuerdo {{ respuesta.recuerdoId }} con Lugar {{ respuesta.lugarId }} <br />
+      Fecha: {{ respuesta.fechaAsociacion }}
+    </div>
+
+    <button type="submit" [disabled]="cargando">Asociar</button>
+  </form>
+</div>
+
+<style>
+  .container { max-width: 600px; margin: 40px auto; background: #fff; box-shadow: 0 8px 32px rgba(0,0,0,0.08); border-radius: 10px; padding: 32px 40px; }
+  h2 { color: #1565c0; margin-top: 0; }
+  .row { display:flex; gap:20px; flex-wrap:wrap; margin-bottom: 16px; }
+  .col { flex:1 1 200px; display:flex; flex-direction:column; }
+  input { padding: 8px 10px; border-radius: 6px; border: 1px solid #ccc; font-size: 1em; }
+  button { padding: 10px 16px; border-radius: 6px; background: #1565c0; color: white; font-weight: 600; border: none; cursor: pointer; }
+  button[disabled] { background: #90caf9; cursor: not-allowed; }
+  .success { color: #2e7d32; font-weight: 600; margin-top: 12px; }
+  .error { color: #c62828; font-weight: 600; margin-top: 8px; }
+</style>

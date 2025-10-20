@@ -1,11 +1,19 @@
 <!-- File: src/app/components/crear-lugar/crear-lugar.component.html -->
-<div class="crear-lugar">
+<div class="container crear-lugar">
+  <h2>Crear un nuevo lugar</h2>
   <form [formGroup]="lugarForm" (ngSubmit)="submit()">
-    <div>
-      <label for="nombre">Nombre</label>
-      <input id="nombre" formControlName="nombre" />
-      <div *ngIf="lugarForm.get('nombre')?.invalid && lugarForm.get('nombre')?.touched">
-        <small>El nombre es requerido</small>
+    <div class="row">
+      <div class="col">
+        <label for="nombre">Nombre</label>
+        <input id="nombre" formControlName="nombre" />
+        <div *ngIf="lugarForm.get('nombre')?.invalid && lugarForm.get('nombre')?.touched">
+          <small class="error">El nombre es requerido</small>
+        </div>
+      </div>
+
+      <div class="col">
+        <label for="direccion">Dirección</label>
+        <input id="direccion" formControlName="direccion" />
       </div>
     </div>
 
@@ -14,14 +22,25 @@
       <textarea id="descripcion" formControlName="descripcion"></textarea>
     </div>
 
-    <div>
-      <label for="direccion">Dirección</label>
-      <input id="direccion" formControlName="direccion" />
-    </div>
-
     <div *ngIf="error" class="error">{{ error }}</div>
-    <div *ngIf="respuesta" class="success">Lugar creado: {{ respuesta?.nombre }} (ID: {{ respuesta?.id }})</div>
+    <div *ngIf="respuesta" class="success">
+      Lugar creado: {{ respuesta?.nombre }} (ID: {{ respuesta?.id }})
+    </div>
 
     <button type="submit" [disabled]="cargando">Crear lugar</button>
   </form>
 </div>
+
+<!-- Puedes pegar los estilos CSS globales o en crear-lugar.component.css -->
+<style>
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fafbfc; color: #23272f; margin: 0; padding: 0; }
+  .container { max-width: 950px; margin: 40px auto; background: #fff; box-shadow: 0 8px 32px rgba(0,0,0,0.08); border-radius: 10px; padding: 32px 40px; }
+  h2 { color: #2e7d32; margin-top: 0; }
+  .row { display:flex; gap:20px; flex-wrap:wrap; margin-bottom: 16px; }
+  .col { flex:1 1 420px; display:flex; flex-direction:column; }
+  input, textarea { padding: 8px 10px; border-radius: 6px; border: 1px solid #ccc; font-size: 1em; }
+  button { padding: 10px 16px; border-radius: 6px; background: #1565c0; color: white; font-weight: 600; border: none; cursor: pointer; }
+  button[disabled] { background: #90caf9; cursor: not-allowed; }
+  .success { color: #2e7d32; font-weight: 600; margin-top: 12px; }
+  .error { color: #c62828; font-weight: 600; margin-top: 8px; }
+</style>
