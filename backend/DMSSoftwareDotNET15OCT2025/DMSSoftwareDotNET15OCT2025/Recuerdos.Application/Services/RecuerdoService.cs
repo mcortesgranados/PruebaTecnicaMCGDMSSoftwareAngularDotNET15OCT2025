@@ -63,5 +63,11 @@ namespace DMSSoftwareDotNET15OCT2025.Recuerdos.Application.Services
         {
             return await _repository.GetObjetosByRecuerdoIdAsync(recuerdoId);
         }
+
+        // Método para listar personas asociadas
+        public async Task<List<PersonaRecuerdoDto>> ListarPersonasAsync(int recuerdoId)
+        {
+            return await _repository.ListarPersonasAsync(recuerdoId);
+        }
     }
 }
