@@ -21,6 +21,13 @@ namespace DMSSoftwareDotNET15OCT2025.Recuerdos.Infrastructure.Repositories
             await _db.SaveChangesAsync();
             return persona;
         }
+
+        // Nuevo método para buscar persona por nombre y creador
+        public async Task<Persona?> GetByNombreYCreadorAsync(string nombre, int creadorId)
+        {
+            return await _db.Personas
+                            .FirstOrDefaultAsync(p => p.Nombre == nombre && p.CreadorId == creadorId);
+        }
     }
 
     /// <summary>
@@ -39,4 +46,6 @@ namespace DMSSoftwareDotNET15OCT2025.Recuerdos.Infrastructure.Repositories
             return rp;
         }
     }
+
+
 }
