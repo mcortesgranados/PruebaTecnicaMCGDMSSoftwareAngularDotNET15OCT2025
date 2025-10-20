@@ -5,6 +5,7 @@ export interface AuthRequest {
   password: string;
 }
 
+export interface AuthResponse {
   $id?: string;
   token: string;
   usuarioId: number;
